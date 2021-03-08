@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering reservations</title>
+</head>
+
+<body>
+    <div class="formWraper">
+        <form action="" method="get">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <div class="personalData">
+                    <div class="clientName">
+                        <label for="clientName">Ime i prezime</label>
+                        <input type="text" name="clientName" id="clientName" required>
+                        <br><br>
+                    </div>
+                    <div class="clientEmail">
+                        <label for="clientEmail">Email</label>
+                        <input type="email" name="clientEmail" id="clientEmail">
+                        <br><br>
+                    </div>
+                    <div class="clientPhone">
+                        <label for="clientPhone">Broj telefona</label>
+                        <input type="tel" name="clientPhone" id="clientPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required placeholder="06x-xxx-xxxx">
+                        <br><br>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Adresa</legend>
+                <div class="location">
+                    <div class="clientCity">
+                        <label for="clientCity">Mesto *</label>
+                        <select name="clientCity" id="clientCity" required>
+                            <option value="011">Beograd</option>
+                            <option value="021">Novi Sad</option>
+                            <option value="024" selected>Subotica</option>
+                            <option value="018">Niš</option>
+                        </select>
+                        <br><br>
+                    </div>
+                    <div class="clientStreet">
+                        <label for="clientStreet">Ulica</label>
+                        <input type="text" name="clientStreet" id="clientStreet" required>
+                        <br><br>
+                    </div>
+                    <div class="clientStNum">
+                        <label for="clientStNum">Ul. broj</label>
+                        <input type="number" name="clientStNum" id="clientStNum" required>
+                        <br><br>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Dodatne informacije</legend>
+                <div class="eventInfo">
+                    <div class="eventType">
+                        <label for="eventType">Tip događaja</label>
+                        <select name="eventType" id="eventType" required>
+                            <option value="1">Rođendan</option>
+                            <option value="2" selected>Venčanje</option>
+                            <option value="3">Poslovna manifestacija</option>
+                        </select>
+                        <br><br>
+                    </div>
+                    <div class="guestNum">
+                        <label for="guestNum">Broj gostiju</label>
+                        <input type="number" name="guestNum" id="guestNum" max="100" min="15" placeholder="30">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="sub-button">
+                <button type="submit">Potvrdi</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

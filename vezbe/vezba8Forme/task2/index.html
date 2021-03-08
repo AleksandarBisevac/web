@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Textarea/Radio/Checkbox
+● Create a page that simulates a school quiz, containing multiple questions:
+● The first question should contain multiple options out of which the student
+can select only one
+● The second quiz question has multiple options out of which the user can
+select several
+● The third question should require from user to insert some long text-->
+
+    <h1>ART BOX KVIZ</h1>
+    <div class="formWrapp">
+        <form action="music-box-info.php" method="POST">
+            <div class="firstQ">
+                <p>Koji od umetnika ne pripada tragičnom "klubu 27"?</p><br>
+                <label>Kurt Kobejn
+                    <input type="radio" name="klub27" id="27CB" value="27CB">
+                </label>
+                <label>Ejmi Vajnhaus
+                    <input type="radio" name="klub27" id="27EW" value="27EW">
+                </label>
+                <label>Džim Morison
+                    <input type="radio" name="klub27" id="27JM" value="27JM">
+                </label>
+                <label>Aleksandar Levi
+                    <input type="radio" name="klub27" id="27AL" value="27AL">
+                </label>
+
+                <label>Ijan Kertis
+                    <input type="radio" name="klub27" id="27JH" value="27JH">
+                </label>
+
+                <label>Dženis Džoplin
+                    <input type="radio" name="klub27" id="27IC" value="27IC">
+                </label>
+                <label>Brajan Džouns
+                    <input type="radio" name="klub27" id="27BJ" value="27BJ">
+                </label><br><br><br><br>
+            </div>
+            <div class="secondQ">
+                <label for="starWarsQ">Koji od filmova ne pripada/pripadaju priči "Saga o Skajvokerima" </label><br><br>
+                <select name="starWarsQ" id="starWarsQ" multiple size="5" required>
+                    <option value="1">Nova nada</option>
+                    <option value="2">Povratak džedaja</option>
+                    <option value="3">Osveta sita</option>
+                    <option value="4">Solo</option>
+                    <option value="5">Imperija uzvraća udarac</option>
+                    <option value="6" selected>Sile sudbine</option>
+                    <option value="7">Napad klonova</option>
+                    <option value="8">Odmetnik-1</option>
+                    <option value="9">Fantomska pretnja</option>
+                    <option value="10">Uspon Skajvokera </option>
+                </select>
+            </div>
+            <div>
+                <label for="bookQoute">Unesi svoj omiljeni citat iz neke knjige</label>
+                <textarea name="bookQoute" id="bookQoute" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="subm-button">
+                <button type="submit">Rock it up!</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
