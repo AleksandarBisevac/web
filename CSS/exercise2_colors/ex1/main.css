@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.pWrapp :first-child {
+    color: darkturquoise;
+    background-color: black;
+    opacity: 0.5;
+}
+.pWrapp :nth-child(2){
+    color: rgb(34, 83, 34);
+    background-color: rgb(255, 235, 205, 0.5);
+}
+.pWrapp :nth-child(3){
+    color: #6e2326;
+    background-color: burlywood;
+}
+
+.img1{
+    margin: 50px auto;
+    padding: 30px; 
+    width: 460px;
+    background-color: rgb(222, 184, 135, 0.9);
+}
+.img1 img{
+    margin: 30px auto;
+    width: 400px;
+    height: 600px;
+    opacity: 0.8;
+    display: block;
+}
+
+.tableExc{
+    width: 400px;
+    margin: 30px auto;
+}
+
+table{
+    border: 1px solid black;
+}
+td {
+    width: 30px;
+    height: 30px;
+}
+td:first-child{
+    background-color: aliceblue;
+}
+td:nth-child(2){
+    background-color: hotpink;
+}
+tr {
+    width: 30px;
+    height: 30px;
+}
