@@ -1,0 +1,59 @@
+/* Borders
+● Create three paragraphs on the page
+● All of them should have a yellow background
+● Each paragraph should have a 5px thick border
+● The first and the last paragraphs should have red dashed borders
+● The middle one should have green solid borders
+
+Padding
+● Use the previous example or create three new paragraphs with bg color
+● Set padding for each paragraph
+● The first and the third should have a 50px padding around all sides
+● The middle one should have a 50px top padding only
+
+Margins
+● Use the previous example and add margins to each element
+● The first should be 300px wide and should have 50px margins around all
+sides
+● The second should be 400px wide and it should be horizontally centered on
+the screen
+● The third one should be 200px wide and should have a 100px wide left
+margin
+
+Inline/Block Elements
+● Transform the structure from the previous exercise
+● Each paragraph should have the right margin set to 20px and no padding
+(0)
+● Elements should all be in one row  */
+
+/* ::::::::::::::::::: GLOBAL STYLES :::::::::::::::::::*/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*::::::::::::::::::: LAYOUT :::::::::::::::::::*/
+.text p {
+    background-color: rgb(253, 253, 179);
+    border: 5px dashed rgb(153, 68, 68);
+}
+.text p:nth-of-type(1){
+    width: 300px;
+    margin: 50px;
+    padding: 50px;
+}
+.text p:nth-of-type(2){
+    width: 400px;
+    margin: 0 auto;
+    border: 5px solid rgb(77, 148, 77);
+    padding-top: 50px;
+}
+.text p:last-of-type{
+    width: 200px;
+    margin-left: 200px;
+    padding: 50px;
+}
+

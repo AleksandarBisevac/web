@@ -1,0 +1,64 @@
+/* ● Hide/Show
+○ Hide the middle paragraph from the previous example
+○ The third paragraph should be hidden
+● Box Shadow
+○ Add a main title on the page using h1 element
+○ Set width of the title to 960px
+○ Position the heading box to the center of the page
+○ The text in the heading should be centered
+○ Add top and bottom padding of 50px and do that for the top/bottom
+margins also
+○ Define box background color, and font color
+○ Include some fancy font for the title
+○ Apply box shadow to the heading box
+
+● Rounded Corners
+○ Round the corners on the heading box (try different radiuses) */
+
+/* ::::::::::::::::::: GLOBAL STYLES ::::::::::::::::::: */
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: "Ranchers";
+  src: url("fonts/Ranchers-Regular.ttf");
+}
+/*::::::::::::::::::: LAYOUT :::::::::::::::::::*/
+h1 {
+  width: 960px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Ranchers;
+  font-size: 3rem;
+  padding: 50px 0;
+  background-color: rgb(153, 68, 68);
+  color: honeydew;
+  box-shadow: 10px 9px 23px -4px rgba(153, 68, 68, 0.87);
+  -webkit-box-shadow: 10px 9px 23px -4px rgba(153, 68, 68, 0.87);
+  -moz-box-shadow: 10px 9px 23px -4px rgba(153, 68, 68, 0.87);
+  border-radius: 50px;
+}
+.text p {
+  background-color: rgb(253, 253, 179);
+  border: 5px dashed rgb(153, 68, 68);
+  display: inline-block;
+}
+.text p:nth-of-type(1) {
+  width: 300px;
+  margin-right: 50px;
+}
+.text p:nth-of-type(2) {
+  width: 400px;
+  margin-right: 50px;
+  border: 5px solid rgb(77, 148, 77);
+  display: none;;
+}
+.text p:last-of-type {
+  width: 200px;
+  margin-right: 50px;
+  visibility: hidden;
+}

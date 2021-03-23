@@ -1,7 +1,7 @@
 /*:::::::::::::GLOBAL SELECTORS::::::::::::::*/
 @font-face {
     font-family: Roboto-Regular;
-    src: url(fonts/Roboto/Roboto-Regular.ttf);
+    src: url('fonts/Roboto/Roboto-Regular.ttf');
 }
 html{
     font-size: 20px;

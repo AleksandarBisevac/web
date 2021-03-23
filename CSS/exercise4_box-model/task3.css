@@ -1,0 +1,38 @@
+/*Inline/Block Elements
+● Transform the structure from the previous exercise
+● Each paragraph should have the right margin set to 20px and no padding
+(0)
+● Elements should all be in one row*/
+
+  /*::::::::::::::::::: GLOBAL STYLES :::::::::::::::::::*/
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /*::::::::::::::::::: LAYOUT :::::::::::::::::::*/
+  .text p {
+      background-color: rgb(253, 253, 179);
+      border: 5px dashed rgb(153, 68, 68);
+      display: inline-block;
+  }
+  .text p:nth-of-type(1){
+      width: 300px;
+      margin-right: 50px;
+      _padding: 50px;
+  }
+  .text p:nth-of-type(2){
+      width: 400px;
+      margin-right: 50px;
+      border: 5px solid rgb(77, 148, 77);
+      _padding-top: 50px;
+  }
+  .text p:last-of-type{
+      width: 200px;
+      margin-right: 50px;
+      _padding: 50px;
+  }
+  

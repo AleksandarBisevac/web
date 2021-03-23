@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapp p:first-child{
+    background-color: rgb(255, 255, 166);
+    _width: 400px;
+    height: 500px;
+    max-width: 300px;
+    overflow: hidden;
+}
+.wrapp p:nth-child(2){
+    background-color: rgb(255, 162, 166);
+    width: 600px;
+    _height: 300px;
+    max-height: 200px;
+}
