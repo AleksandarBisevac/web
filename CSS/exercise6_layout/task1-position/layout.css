@@ -1,0 +1,65 @@
+/*::::::::::::::::: GLOBAL STYLES :::::::::::::::::*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-style: none;
+}
+body {
+  font: normal normal 18px/150% Arial, sans-serif;
+}
+
+/*::::::::::::::::: LAYOUT STYLES :::::::::::::::::*/
+h1 {
+  width: 100%;
+  margin: 20px auto;
+  color: coral;
+  text-align: center;
+}
+.task-position {
+  position: relative;
+  width: 66%;
+  height: auto;
+}
+.img-body {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 33%;
+}
+.task-position img {
+  width: 50%;
+}
+#cica-img {
+  position: relative;
+  top: 50px;
+  left: 100px;
+  margin-bottom: 50px;
+}
+#eva-img {
+  width: 90%;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+#beer-img {
+  position: absolute;
+  bottom: 0px;
+}
+#up {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: coral;
+  border-radius: 10px;
+  font: normal bold 1.3rem/150% Tahoma, serif;
+  box-shadow: 0 0 8px;
+}
+/*::::::::::::::::: SPECIFIC STYLES :::::::::::::::::*/
+#up a {
+  text-decoration: none;
+  list-style: none;
+  color: aliceblue;
+}

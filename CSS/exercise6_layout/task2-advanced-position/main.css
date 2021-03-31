@@ -1,0 +1,79 @@
+/*::::::::::::::::::::: GLOBAL STYLES :::::::::::::::::::::*/
+* {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(228, 228, 228);
+  font-size: 20px;
+}
+
+/*::::::::::::::::::::: LAYOOUT STYLES :::::::::::::::::::::*/
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  padding: 1.5rem 0;
+  background-color: yellow;
+}
+.nav li {
+  position: relative;
+  width: 5rem;
+  padding: 1rem 0;
+  margin-left: 1.5rem;
+  vertical-align: bottom;
+  text-align: center;
+  _border: 1px dotted red;
+  float: left;
+}
+/*::::::::::::::::::::: SPECIFIC STYLES :::::::::::::::::::::*/
+ul {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999999;
+  visibility: hidden;
+}
+ul.submenu li {
+  position: relative;
+  display: block;
+  padding: 1rem 0;
+  margin-left: 0;
+  width: 20rem;
+  text-align: left;
+  _border: 1px dotted greenyellow;
+  background-color: white;
+}
+ul.submenu li a {
+  padding-left: 1rem;
+}
+li.active {
+  background-color: rgb(228, 228, 228);
+}
+/*::::::::::::::::::::: HELPER CLASSES :::::::::::::::::::::*/
+.nav li:hover {
+  background-color: rgb(228, 228, 228);
+}
+.nav li:nth-child(3):hover ul.submenu li {
+  visibility: visible;
+}
+ul.submenu li:hover {
+  background-color: rgb(228, 228, 228);
+}
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
