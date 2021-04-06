@@ -144,8 +144,8 @@ nav li a:hover {
 }
 .clearfix::before,
 .clearfix::after {
-  content: " ";
-  display: table;
+  content: "";
+  display: block;
 }
 .clearfix::after {
   clear: both;
