@@ -63,7 +63,7 @@ li.active {
 .nav li:hover {
   background-color: rgb(228, 228, 228);
 }
-.nav li:nth-child(3):hover ul.submenu li {
+.nav li:hover ul.submenu li {
   visibility: visible;
 }
 ul.submenu li:hover {

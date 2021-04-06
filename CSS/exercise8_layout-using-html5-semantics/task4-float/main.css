@@ -9,14 +9,14 @@
   width: 960px;
   margin: 0 auto;
 }
-.nav {
+nav {
   width: 100%;
   height: auto;
   padding: 10px 0;
   margin-bottom: 5px;
   background-color: rgb(202, 93, 93);
 }
-.nav ul {
+nav ul {
   position: relative;
   top: 0;
   left: 0;
@@ -47,7 +47,7 @@ article {
   display: inline-block;
   text-align: center;
 }
-.side-wrapp {
+aside {
   width: 300px;
   height: 400px;
   float: left;
@@ -59,17 +59,21 @@ article {
   top: 5px;
   right: 5px;
 }
-
+footer {
+  position: ;
+  width: 100%;
+  background-color: #2d3e50;
+}
 /*::::::::::::::::: SPECIFIC STYLES :::::::::::::::::*/
 
-.nav li {
+nav li {
   float: left;
   padding-right: 2rem;
   padding-bottom: 5px;
   overflow: hidden;
 }
 
-.nav li a {
+nav li a {
   font-size: 1.5rem;
   padding: 5px;
   display: block;
@@ -119,9 +123,15 @@ article {
   text-indent: none;
   color: rgb(34, 34, 34);
 }
-
+footer p {
+  color: white;
+  width: 960px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: left;
+}
 /*::::::::::::::::: HELPER CLASSES :::::::::::::::::*/
-.nav li a:hover {
+nav li a:hover {
   position: relative;
   top: 5px;
   left: 5px;
