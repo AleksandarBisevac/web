@@ -1,0 +1,19 @@
+.nav-link:hover {
+  font-weight: bold;
+}
+.place-holder {
+  width: 300px;
+  height: 200px;
+}
+.paragraph-width {
+  width: 300px;
+}
+.bg-dark-blue {
+  background-color: #2d3e50;
+}
+.side-link:hover {
+  font-weight: bold;
+}
+.side {
+  margin: 0 auto;
+}

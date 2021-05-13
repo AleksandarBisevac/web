@@ -1,0 +1,10 @@
+Installation
+
+Include Bootstrap in “Most Wanted Criminals” (HTML project) on which you
+worked on at the beginning of the course.
+Using downloaded files
+Download Bootstrap from the official website and include it on “Create
+poster” page.
+CDN
+Use CDN links provided by Bootstrap and include Bootstrap on the “Poster”
+page.
