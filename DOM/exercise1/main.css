@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  width: 400px;
+  margin: 100px auto;
+  text-align: center;
+  box-shadow: 0 0 8px;
+}
+
+li {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #ddd;
+}
+.color-li {
+  background-color: cadetblue;
+}
+
+.color-and-text-li {
+  background-color: rgb(142, 133, 224);
+  text-transform: uppercase;
+}
