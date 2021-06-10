@@ -1,0 +1,42 @@
+.wrapp {
+  position: relative;
+  display: flex;
+  margin: 50px auto;
+  height: 740px;
+  width: 1200px;
+  background-image: url("assets/field.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+#player {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+#stop {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 93, 93);
+  border: 1px solid green;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10%;
+  z-index: 15;
+}
+#move {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(144, 255, 93);
+  border: 1px solid green;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10%;
+  z-index: 15;
+}

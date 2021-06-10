@@ -29,5 +29,5 @@ function removeActiveAndSetFirst(arg) {
   }
 }
 
-var activeLi = selectLi(2);
+var activeLi = selectLi(1);
 removeActiveAndSetFirst(activeLi);

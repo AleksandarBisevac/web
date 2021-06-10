@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.img-wrapper {
+  position: relative;
+}
+#mario {
+  width: 15%;
+  position: absolute;
+  top: 480px;
+  left: 40%;
+  z-index: 15;
+}
+#marioRun {
+  width: 15%;
+  position: absolute;
+  top: 440px;
+  left: 40%;
+  display: none;
+  z-index: 15;
+}
+#bg1 {
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#bg2 {
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
