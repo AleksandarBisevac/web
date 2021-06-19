@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+.gallery {
+  width: 80%;
+  display: flex;
+  margin: 20px auto 50px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+.img-handler {
+  width: 33%;
+}
+.img-handler img {
+  width: 100%;
+}
+.selected {
+  border: 4px solid salmon;
+}
+.btn-wrapp {
+  display: flex;
+  justify-content: center;
+}
+button {
+  padding: 20px;
+  color: antiquewhite;
+  font-weight: 700;
+  background-color: salmon;
+  box-shadow: 0 0 3px;
+  cursor: pointer;
+}

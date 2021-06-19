@@ -1,0 +1,19 @@
+/*
+Selecting
+Create a page that contains navigation (ul element)
+Navigation should contain odd number of elements
+Select the first element of the list and give it a bottom border
+Select all list elements and transform their text to uppercase
+Select active element of the list and change its font color
+Find the middle one and change its background color
+*/
+
+allLi = $("nav li");
+firstLi = $("nav li:first");
+activeLi = $("nav li.active");
+
+firstLi.css("border-bottom", "2px solid red");
+allLi.css("text-transform", "uppercase");
+activeLi.css("color", "blue");
+
+allLi.eq(allLi.length / 2 - 0.5).css("background-color", "tomato");
