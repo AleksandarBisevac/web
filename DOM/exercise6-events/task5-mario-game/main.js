@@ -4,7 +4,7 @@ var mario = document.querySelector("#mario");
 var marioRun = document.querySelector("#marioRun");
 var bg1 = document.querySelector("#bg1");
 var bg2 = document.querySelector("#bg2");
-
+//ismariorunning false ako ne trci
 document.addEventListener("keydown", play);
 
 function play(e) {
