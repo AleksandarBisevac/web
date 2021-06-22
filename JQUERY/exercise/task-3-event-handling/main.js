@@ -1,9 +1,9 @@
 $(document).ready(function () {
   var $player = $("#player");
   $(".wrapp").on("click", function (event) {
-    var positionX = event.clientX - this.offsetLeft - 100;
-    var positionY = event.clientY - this.offsetTop - 50;
-    if (!player.hasClass("inactive")) {
+    var positionX = event.clientX - this.offsetLeft - 50;
+    var positionY = event.clientY - this.offsetTop - 100;
+    if (!$player.hasClass("inactive")) {
       $player
         .fadeOut(500, function () {
           $player.css({
