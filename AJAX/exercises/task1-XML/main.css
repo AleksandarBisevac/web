@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  height: 90vh;
+  margin: 40px auto 0;
+  padding: 2rem;
+  box-shadow: 0 0 4px;
+}
+h2 {
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+  text-align: center;
+  background-color: coral;
+  border-radius: 5px;
+  color: aliceblue;
+  font-size: 2rem;
+}
+.location {
+  color: rgb(42, 32, 87);
+  background-color: rgba(233, 233, 233, 0.6);
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+#ipAddress {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #666;
+  border: 2px solid coral;
+}
+#ipAddress::placeholder {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  color: rgb(102, 102, 102, 0.7);
+}
+#find {
+  margin-top: 2rem;
+  display: block;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: coral;
+  color: aliceblue;
+  border: 2px solid tomato;
+  width: 35%;
+  cursor: pointer;
+}
+@media only screen and (min-width: 978px) {
+  .container {
+    width: 60%;
+  }
+  #find {
+    width: 25%;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+  #ipAddress {
+    padding: 1rem;
+  }
+}

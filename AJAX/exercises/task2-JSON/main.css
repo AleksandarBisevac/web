@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.img-wrapper {
+  width: 60%;
+  margin: 3rem auto 0;
+}
+.img-wrapper img {
+  display: block;
+  margin: 0 auto;
+  height: 50vh;
+  box-shadow: 0 0 8px;
+}
+
+#doggy {
+  display: block;
+  margin: 5rem auto 0;
+  width: 20%;
+  padding: 1rem 0;
+  cursor: pointer;
+  background-color: khaki;
+}
+#doggy > img {
+  width: 25%;
+}
+#doggy:hover {
+  background-color: sienna;
+}
