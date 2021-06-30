@@ -48,13 +48,13 @@ $searchInput.keydown(function (e) {
           dataType: "json",
         }).done(function (response) {
           $repositories = response.map((x) => x);
-          console.log($repositories);
+          $repInfo.html("");
           $repositories.forEach((element) => {
             let $repItem = $("<div>");
             $repItem.html(`<div class="rep-img"><img src="github.png"></div><a href="${element.html_url}" target="_blank"><h4 class="rep-name">${element.name}</h4></a>
             <div class="rep-description"><p>${element.description}</p></div>
             <div class="stars">&#11088; ${element.stargazers_count}</div>`);
-            $showProfile.append($repItem);
+            $repInfo.append($repItem);
             $repItem.addClass("rep-item");
           });
           $userImg.html(`<img src="${obj.avatar_url}">`);

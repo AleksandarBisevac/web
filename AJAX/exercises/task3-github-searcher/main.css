@@ -63,7 +63,7 @@ main {
   justify-content: space-evenly;
 }
 .response-box {
-  width: 25%;
+  width: 27%;
   margin: 1rem;
   padding: 0.5rem;
   border: 3px solid #315659;
@@ -79,7 +79,9 @@ main {
 .response-box h3 {
   display: block;
   margin: 0 auto 1rem;
-  width: 80%;
+  width: 90%;
+  font-size: 1rem;
+  text-overflow: ellipsis;
   color: antiquewhite;
   text-decoration: none;
   text-transform: uppercase;
@@ -134,10 +136,13 @@ header h4 {
   width: 100%;
   font-size: 4rem;
   text-align: center;
+  text-overflow: ellipsis;
 }
 #rep-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .rep-item {
   margin: 1rem auto;
@@ -146,7 +151,7 @@ header h4 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: end;
+  align-items: center;
   border-bottom: 2px solid #2978a0;
 }
 .rep-item h4 {
@@ -179,26 +184,89 @@ header h4 {
   color: antiquewhite;
   text-align: end;
 }
-
+/***************************************************
+                MEDIA QUERIES
+***************************************************/
 @media only screen and (max-width: 600px) {
   body {
     font-size: 10px;
   }
+  #logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+  }
+  #logo img {
+    width: 2rem;
+    height: 2rem;
+  }
+  main {
+    margin-top: 2rem;
+  }
+  .response-box {
+    width: 39%;
+  }
   .response-box h3 {
-    font-size: 60%;
+    width: 100%;
+    font-size: 0.8rem;
+    text-overflow: ellipsis;
   }
   header {
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
   input#search {
     margin: 2rem 0;
-    width: 50%;
+    width: 60%;
   }
   #logo img {
     margin: 0;
+  }
+  header h4 {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .rep-item {
+    margin: 1rem auto;
+    padding: 1rem 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #2978a0;
+  }
+  .rep-img {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .rep-img img {
+    width: 30%;
+  }
+  .rep-item h4 {
+    font-size: 2rem;
+    color: antiquewhite;
+  }
+  .rep-item a {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+  }
+  .rep-item h4:hover {
+    color: #2978a0;
+  }
+  .stars {
+    min-width: 10%;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    margin: 1rem 0;
+    text-align: end;
   }
 }
 
