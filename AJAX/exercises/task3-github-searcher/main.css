@@ -114,10 +114,6 @@ main {
   color: #253031;
   border-bottom: 2px solid #253031;
 }
-#rep-info {
-  display: flex;
-  flex-direction: column;
-}
 
 .show-profile header {
   width: 90%;
@@ -139,7 +135,10 @@ header h4 {
   font-size: 4rem;
   text-align: center;
 }
-
+#rep-info {
+  display: flex;
+  flex-direction: column;
+}
 .rep-item {
   margin: 1rem auto;
   padding: 1rem 0;
@@ -151,11 +150,11 @@ header h4 {
   border-bottom: 2px solid #2978a0;
 }
 .rep-item h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: antiquewhite;
 }
 .rep-item a {
-  width: 30%;
+  min-width: 30%;
   text-decoration: none;
 }
 .rep-item h4:hover {
@@ -163,10 +162,10 @@ header h4 {
 }
 .rep-img {
   padding-left: 2rem;
-  width: 10%;
+  min-width: 10%;
 }
 .rep-img img {
-  width: 3rem;
+  width: 80%;
 }
 .rep-description {
   font-size: 1.2rem;
@@ -175,7 +174,7 @@ header h4 {
   text-align: start;
 }
 .stars {
-  width: 10%;
+  min-width: 10%;
   font-size: 1.2rem;
   color: antiquewhite;
   text-align: end;
