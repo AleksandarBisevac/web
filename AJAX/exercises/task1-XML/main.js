@@ -17,7 +17,7 @@ findBtn.addEventListener("click", function () {
 
   function displayLocation() {
     // preuzimanje podataka i parsovanje istih
-    let data = xml.responseText;
+    let data = xml.responseText; // xml.responseXML; nije potreban DOM parser
     let parser = new DOMParser();
     let root = parser.parseFromString(data, "text/xml");
 
