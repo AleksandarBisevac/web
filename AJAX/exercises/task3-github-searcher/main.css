@@ -47,6 +47,7 @@ input#search {
   border-radius: 7.5px;
 }
 input#search:focus {
+  padding-left: 3rem;
   background-image: none;
   text-indent: 0px;
   border-color: antiquewhite;
@@ -75,25 +76,116 @@ main {
 .img-handler img {
   width: 100%;
 }
-.response-box a {
+.response-box h3 {
   display: block;
-  margin-bottom: 1rem;
-  font-size: 100%;
+  margin: 0 auto 1rem;
+  width: 80%;
   color: antiquewhite;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
   text-align: center;
+  overflow: hidden;
 }
-.response-box a:hover {
+.response-box h3:hover {
   color: #253031;
+}
+#show-profile {
+  position: fixed;
+  overflow: scroll;
+  top: 5%;
+  left: 5%;
+  width: 90vw;
+  height: 100%;
+  z-index: 999;
+  background-color: rgb(49, 86, 89, 0.9);
+}
+#x {
+  position: fixed;
+  top: 5%;
+  right: 6%;
+  font-size: 2rem;
+  z-index: 99999;
+  color: antiquewhite;
+  font-weight: 700;
+  cursor: pointer;
+}
+#x:hover {
+  color: #253031;
+  border-bottom: 2px solid #253031;
+}
+#rep-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-profile header {
+  width: 90%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.img-user {
+  margin-left: 1rem;
+}
+.img-user img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+header h4 {
+  width: 100%;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.rep-item {
+  margin: 1rem auto;
+  padding: 1rem 0;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: end;
+  border-bottom: 2px solid #2978a0;
+}
+.rep-item h4 {
+  font-size: 1.5rem;
+  color: antiquewhite;
+}
+.rep-item a {
+  width: 30%;
+  text-decoration: none;
+}
+.rep-item h4:hover {
+  color: #2978a0;
+}
+.rep-img {
+  padding-left: 2rem;
+  width: 10%;
+}
+.rep-img img {
+  width: 3rem;
+}
+.rep-description {
+  font-size: 1.2rem;
+  color: #fff;
+  min-width: 50%;
+  text-align: start;
+}
+.stars {
+  width: 10%;
+  font-size: 1.2rem;
+  color: antiquewhite;
+  text-align: end;
 }
 
 @media only screen and (max-width: 600px) {
   body {
     font-size: 10px;
   }
-  .response-box a {
+  .response-box h3 {
     font-size: 60%;
   }
   header {
@@ -109,4 +201,8 @@ main {
   #logo img {
     margin: 0;
   }
+}
+
+.show-hide {
+  display: none;
 }
