@@ -94,30 +94,6 @@ main {
 .response-box h3:hover {
   color: #253031;
 }
-#show-profile {
-  position: fixed;
-  overflow: scroll;
-  top: 5%;
-  left: 5%;
-  width: 90vw;
-  height: 100%;
-  z-index: 999;
-  background-color: rgb(49, 86, 89, 0.9);
-}
-#x {
-  position: fixed;
-  top: 5%;
-  right: 6%;
-  font-size: 2rem;
-  z-index: 99999;
-  color: antiquewhite;
-  font-weight: 700;
-  cursor: pointer;
-}
-#x:hover {
-  color: #253031;
-  border-bottom: 2px solid #253031;
-}
 
 .show-profile header {
   width: 90%;
